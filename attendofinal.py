@@ -291,8 +291,6 @@ if st.session_state['running']:
             camera_index = 0
 
     # --- FIX: Force OpenCV to use the stable Windows driver (DirectShow) ---
-    # This prevents the camera from freezing or displaying a black screen.
-    # Note: cv2.CAP_DSHOW works best on Windows.
     cap = cv2.VideoCapture(camera_index, cv2.CAP_DSHOW)
 
     if not cap.isOpened():
