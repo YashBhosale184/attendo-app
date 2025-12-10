@@ -2,7 +2,6 @@ import streamlit as st
 import os
 import pandas as pd
 import numpy as np
-from deepface import DeepFace
 from datetime import datetime
 from PIL import Image
 import cv2 
@@ -259,3 +258,4 @@ with tab_log:
     )
     
     st.markdown("*(This log file is permanently saved locally as `attendance_log.csv`)*")    
+
